@@ -1,0 +1,8 @@
+#logistic multinomial
+CREATE OR REPLACE MODEL `azuredatathonic26723.ml_data.sentiment`
+OPTIONS(MODEL_TYPE='LOGISTIC_REG',
+    CLASS_WEIGHTS=[('Positive', 0.2), ('Neutral', 0.4), ('Negative', 0.4)],
+    input_label_cols=['new_overall'])
+AS
+SELECT summary,new_overall
+FROM `azuredatathonic26723.ml_data.reviews_new` WHERE new_overall <> 'Unknown'
