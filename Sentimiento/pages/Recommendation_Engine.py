@@ -34,7 +34,7 @@ credentials = service_account.Credentials.from_service_account_file(
     credencial_path)
 
 client = bigquery.Client(credentials=credentials,
-                         project="azuredatathonic26723")
+                         project="datathon-intel-colectiva")
 
 st.write("Loading clients list....")
 
