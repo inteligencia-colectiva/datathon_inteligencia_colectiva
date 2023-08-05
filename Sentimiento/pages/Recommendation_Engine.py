@@ -8,11 +8,12 @@ import numpy as np
 st.title("Recommendation Engine")
 st.markdown ('***')
 
-credencial_path = './azuredatathonic26723-0c14968ab1c8.json'
+#credencial_path = './azuredatathonic26723-0c14968ab1c8.json'
+credencial_path = './datathon-intel-colectiva-30fea2af8c02.json'
 client = storage.Client.from_service_account_json(credencial_path)
 # Nombre del bucket y del archivo en GCS
-bucket_name = 'machine_learning_datathon'
-archivo_nombre = 'recommendation_system/category_matrix1000.csv' 
+bucket_name = 'ic_machine_learning'
+archivo_nombre = 'recommendation_system/recommendation_system_category_matrix1000.csv'
 
 # Descarga el archivo desde GCS
 st.write("Loading category-product matrix....")
