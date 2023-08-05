@@ -47,7 +47,7 @@ Some key elements to highlight:
 
 - "reviews" batch:  ~140 million registers
 - "metadata": ~15 million registers
-- "reviews" streaming: ~ registers
+- "reviews" streaming: ~ 60 thousands registers
 
 
 **Insights**
