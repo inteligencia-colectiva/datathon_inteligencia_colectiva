@@ -9,7 +9,7 @@ st.title("Recommendation Engine")
 st.markdown ('***')
 
 #credencial_path = './azuredatathonic26723-0c14968ab1c8.json'
-credencial_path = './datathon-intel-colectiva-30fea2af8c02.json'
+credencial_path = './Sentimiento/datathon-intel-colectiva-30fea2af8c02.json'
 client = storage.Client.from_service_account_json(credencial_path)
 # Nombre del bucket y del archivo en GCS
 bucket_name = 'ic_machine_learning'
