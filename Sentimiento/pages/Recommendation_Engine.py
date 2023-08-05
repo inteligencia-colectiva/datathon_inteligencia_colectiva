@@ -40,11 +40,11 @@ st.write("Loading clients list....")
 
 query = """
     SELECT asin,reviewerID,SAFE_CAST(overall AS FLOAT64) AS ranking
-FROM `azuredatathonic26723.ml_data.reviews` WHERE asin in (SELECT asin FROM(SELECT COUNT(asin) as total, asin FROM `azuredatathonic26723.ml_data.reviews`
+FROM `datathon-intel-colectiva.ml_data.reviews` WHERE asin in (SELECT asin FROM(SELECT COUNT(asin) as total, asin FROM `datathon-intel-colectiva.ml_data.reviews`
 GROUP BY asin
 ORDER by total DESC
 LIMIT 1000)) AND
-reviewerID in (SELECT reviewerID FROM(SELECT COUNT(reviewerID) as total, reviewerID FROM `azuredatathonic26723.ml_data.reviews`
+reviewerID in (SELECT reviewerID FROM(SELECT COUNT(reviewerID) as total, reviewerID FROM `datathon-intel-colectiva.ml_data.reviews`
 GROUP BY reviewerID
 ORDER by total DESC
 LIMIT 1000))
@@ -57,14 +57,14 @@ df_most = query_job.to_dataframe()
 opciones = df_most["reviewerID"].to_list()
 
 query2 = """
-    SELECT asin, categoria FROM `azuredatathonic26723.ml_data.metadata_completa`,
+    SELECT asin, categoria FROM `datathon-intel-colectiva.ml_data.metadata_completa`,
 UNNEST(category) AS categoria
 WHERE asin in (SELECT DISTINCT asin FROM (SELECT asin,reviewerID,SAFE_CAST(overall AS FLOAT64) AS ranking
-FROM `azuredatathonic26723.ml_data.reviews` WHERE asin in (SELECT asin FROM(SELECT COUNT(asin) as total, asin FROM `azuredatathonic26723.ml_data.reviews`
+FROM `datathon-intel-colectiva.ml_data.reviews` WHERE asin in (SELECT asin FROM(SELECT COUNT(asin) as total, asin FROM `datathon-intel-colectiva.ml_data.reviews`
 GROUP BY asin
 ORDER by total DESC
 LIMIT 1000)) AND
-reviewerID in (SELECT reviewerID FROM(SELECT COUNT(reviewerID) as total, reviewerID FROM `azuredatathonic26723.ml_data.reviews`
+reviewerID in (SELECT reviewerID FROM(SELECT COUNT(reviewerID) as total, reviewerID FROM `datathon-intel-colectiva.ml_data.reviews`
 GROUP BY reviewerID
 ORDER by total DESC
 LIMIT 1000))))
@@ -129,7 +129,7 @@ if go:
     recomendation = asin_like_.nlargest(5, 'ranking')
 
     def desc(asin):
-        query3 = "SELECT title,new_main_cat from `azuredatathonic26723.ml_data.metadata_completa` WHERE asin = '"
+        query3 = "SELECT title,new_main_cat from `datathon-intel-colectiva.ml_data.metadata_completa` WHERE asin = '"
         query3 = query3 + asin + "'"
         query3_job = client.query(query3)
         lis_ = query3_job.to_dataframe()
