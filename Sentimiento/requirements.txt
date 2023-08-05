@@ -169,7 +169,7 @@ munch==2.5.0
 murmurhash==1.0.9
 mypy-extensions==0.4.3
 mysql-connector-python==8.0.31
-mysqlclient==2.1.1
+#mysqlclient==2.1.1
 Naked==0.1.32
 nbformat==5.5.0
 nest-asyncio==1.5.5
