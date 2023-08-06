@@ -142,7 +142,7 @@ For a better understanding of the data, you can review our PDF file (link) and, 
 
 ### **`Part 3). ML PROCESS`**
 
-**`Sentiment Analysis`**. 
+### **`Sentiment Analysis`**. 
 
 In this case, to perform Sentiment Analysis, the following options were available:
 
@@ -166,7 +166,7 @@ Finally, the model was deployed on Streamlit, providing the option to evaluate t
 
 You can test sentiment analysis at the file level using the file: test2.csv, which is also attached on GitHub.
 
-**`Recommendation Model`**. 
+### **`Recommendation Model`**
 
 In this case, we leveraged the availability of item categories in the metadata, as well as user rating information for each item. We encountered the following options:
 - Choosing the matrix factorization SVM model offered by BigQuery.
@@ -194,8 +194,7 @@ Finally, in order to be deployed on Streamlit, the decision was made to focus on
   <img src="image/README/recomendation_results.jpg" />
 </div>
 
-
-The models are deployed on streamlit:
+### **`Part 4). THE MODELS ARE DEPLOYED ON STREAMLING`**
 
 Access to streamlit: https://datathoninteligenciacolectiva-c7bpjvnzj4hqdwtzg9fjxc.streamlit.app
 
