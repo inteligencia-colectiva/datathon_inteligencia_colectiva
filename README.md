@@ -2,7 +2,7 @@
   <img src="image/README/factorec-dataton-2023.jpg" />
 </div>
 
- <h1 align=center> AZURE AND GOOGLE CLOUD PLATAFORM INTEGRATION WITH ETL, ML AND STREAMING</h1>
+ <h1 align=center> AZURE AND GOOGLE CLOUD PLATAFORM INTEGRATION WITH DATABRICKS, MACHINE LEARNING AND STREAMING</h1>
 
 ## **TABLE OF CONTENTS**
 - Equipment
@@ -11,11 +11,11 @@
 - Resources and links provided
 - Realization of the project
 
-## **TEAM**: INTELIENCIA COLECTIVA
-- Argumedo Hector - Data Analytict
-- Armao ELoy - Data Engineer
-- Jimenez José - Data Engineer
-- Talavera Ricardo - Data Scientict
+## **TEAM**: INTELIGENCIA COLECTIVA
+- [Argumedo Hector](https://github.com/ArgumedoHector) - Data Engineer - Data Analytics
+- [Armao ELoy](https://github.com/EloyArmaojr90) - Data Engineer
+- [Jimenez José](https://github.com/Jojimene85) - Data Engineer 
+- [Talavera Ricardo](https://github.com/ricardotalavera) - Data Scientict - ML
 
 ## **INTRODUCTION**
 
@@ -99,7 +99,15 @@ To solve the problem of doing the ETL process to the entire mega data structure,
 
 The Batch_ETL.ipynb file details the steps performed on a partition of the data "amazon_metadata/partition_10", and then a for loop is created to extract each file from the datalake where various transformations are applied and then each file is uploaded to the platform
 
-This process is carried out in a similar way to an archive of the reviews data, it can also be observed in the aforementioned archive
+This process is carried out in a similar way to an archive of the reviews data, it can also be observed in the aforementioned archive.
+
+*In relation to the occurrence of null values or NA's, these instances were distributed across various columns. However, a deliberate choice was made to retain these values, so as to preserve specific fields that could potentially be leveraged in subsequent statistical analyses. Ultimately, within the BigQuery framework, these null values were adeptly manageable.*
+
+*This approach reflects a judicious consideration for data integrity. The decision not to eliminate null values was grounded in the rationale of safeguarding potentially valuable information intrinsic to these fields. The anticipation of prospective investigations also factored into this choice, recognizing that seemingly redundant null values could metamorphose into pivotal components of future analytical inquiries.*
+
+*Moreover, the decision to retain null values aligns seamlessly with the capabilities of advanced data processing platforms, such as BigQuery, which inherently offer sophisticated mechanisms for null value handling. This affords the capacity to execute intricate analytical and transformational operations without necessitating the premature culling of records.*
+
+This link give access to the proyect hosting on Google Cloud Platform: [GCP](https://console.cloud.google.com/welcome/new?hl=es&project=datathon-intel-colectiva&authuser=4)
 
 ### **`Part 2). THE ANALYSIS PRESENTED IN THE DOCUMENT`**:
 
@@ -134,8 +142,8 @@ This process is carried out in a similar way to an archive of the reviews data, 
 Overall, the analysis aims to understand customer behavior in providing product reviews, identify purchase patterns and trends, and explore potential relationships between ratings and product features. The analysis also highlights the importance of data, from which insights are drawn to gain a complete and accurate understanding of Amazon customer behavior.
 
 As a discovery, it's books that sell the most, no matter how many images of the product are posted, as long as there are images posted. 
-Most of the reviews are positive, from a sample of approximately 140,000,000 records, more than 110,000,000 correspond to 4 and 5 stars. While the negatives mainly come from disgust regarding the quality and size.
-Considering the number of reviews, 80% of them are signed as Amazon Customers and not with a username, possibly preferring anonymity for reasons unknown to us.
+Most of the reviews are positive, from a sample of approximately **140,000,000** records, more than **110,000,000** correspond to 4 and 5 stars. While the negatives mainly come from disgust regarding the quality and size.
+Considering the number of reviews, **80%** of them are signed as Amazon Customers and not with a username, possibly preferring anonymity for reasons unknown to us.
 
 For a better understanding of the data, you can review our PDF file ([link](Datathon_-_Amazon_Data_Analytics.pdf)) and, for users with permissions, they can enter Looker to be able to interact with them at the following link: [LOOKER - DASHBOARD](https://lookerstudio.google.com/reporting/50ea6d94-c3a1-4a65-ac27-b9b1de1c9271)
 
