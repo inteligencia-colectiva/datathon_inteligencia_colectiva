@@ -105,9 +105,8 @@ This process is carried out in a similar way to an archive of the reviews data, 
 
  **Datathon_-_Amazon_Data_Analytics.pdf** focuses on studying reviews and metadata related to products that customers purchase on Amazon. The analysis is divided into several sections, each with a specific focus.
 
-<div align="center">
-  <img src='https://scribemedia.com/wp-content/uploads/2019/12/How-To-Get-Reviews-For-Your-Book-On-Amazon-700x406.jpg' height = 300><img src = 'https://landingcube.com/wp-content/uploads/2023/03/shutterstock_1654957381.jpg' height = 300 />
-</div>
+
+<img src='https://scribemedia.com/wp-content/uploads/2019/12/How-To-Get-Reviews-For-Your-Book-On-Amazon-700x406.jpg' height = 250><img src ='https://landingcube.com/wp-content/uploads/2023/03/shutterstock_1654957381.jpg' height = 250>
  
 
 1. **Number of Reviews per Rating:** This section shows the distribution of the number of reviews based on the ratings received by the products. The quantity of reviews for each rating from 1 to 5 stars is observed.
@@ -138,7 +137,7 @@ As a discovery, it's books that sell the most, no matter how many images of the 
 Most of the reviews are positive, from a sample of approximately 140,000,000 records, more than 110,000,000 correspond to 4 and 5 stars. While the negatives mainly come from disgust regarding the quality and size.
 Considering the number of reviews, 80% of them are signed as Amazon Customers and not with a username, possibly preferring anonymity for reasons unknown to us.
 
-For a better understanding of the data, you can review our PDF file (link) and, for users with permissions, they can enter Looker to be able to interact with them at the following link:
+For a better understanding of the data, you can review our PDF file ([link](Datathon_-_Amazon_Data_Analytics.pdf)) and, for users with permissions, they can enter Looker to be able to interact with them at the following link: [LOOKER - DASHBOARD](https://lookerstudio.google.com/reporting/50ea6d94-c3a1-4a65-ac27-b9b1de1c9271)
 
 ### **`Part 3). ML PROCESS`**
 
