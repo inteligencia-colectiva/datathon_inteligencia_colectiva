@@ -114,7 +114,7 @@ This link give access to the proyect hosting on Google Cloud Platform: [GCP](htt
  **Datathon_-_Amazon_Data_Analytics.pdf** focuses on studying reviews and metadata related to products that customers purchase on Amazon. The analysis is divided into several sections, each with a specific focus.
 
 
-<img src='https://scribemedia.com/wp-content/uploads/2019/12/How-To-Get-Reviews-For-Your-Book-On-Amazon-700x406.jpg' height = 250><img src ='https://landingcube.com/wp-content/uploads/2023/03/shutterstock_1654957381.jpg' height = 250>
+<img src='https://scribemedia.com/wp-content/uploads/2019/12/How-To-Get-Reviews-For-Your-Book-On-Amazon-700x406.jpg' height = 200><img src ='https://landingcube.com/wp-content/uploads/2023/03/shutterstock_1654957381.jpg' height = 200>
  
 
 1. **Number of Reviews per Rating:** This section shows the distribution of the number of reviews based on the ratings received by the products. The quantity of reviews for each rating from 1 to 5 stars is observed.
