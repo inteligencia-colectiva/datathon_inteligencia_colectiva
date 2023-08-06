@@ -195,6 +195,6 @@ Finally, in order to be deployed on Streamlit, the decision was made to focus on
 
 ### **`Part 4). THE MODELS ARE DEPLOYED ON STREAMLING`**
 
-Access to streamlit: https://datathoninteligenciacolectiva-c7bpjvnzj4hqdwtzg9fjxc.streamlit.app
+Access to streamlit: [STREAMLIT](https://datathoninteligenciacolectiva-c7bpjvnzj4hqdwtzg9fjxc.streamlit.app)
 
 
